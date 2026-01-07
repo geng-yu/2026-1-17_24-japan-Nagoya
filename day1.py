@@ -3,7 +3,7 @@ import pandas as pd
 from utils import get_gmap_link
 
 def show():
-    st.header("✈️ Day 1: 啟程前往金澤")
+    
     
     # --- 飛機 ---
     with st.container(border=True):
