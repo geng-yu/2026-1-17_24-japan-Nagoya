@@ -9,8 +9,7 @@ def show():
     with st.container(border=True):
         st.markdown("### 🛫 國泰航空 CX530")
         col1, col2 = st.columns(2)
-        col1.write("12:00 TPE 起飛")
-        col2.write("15:35 NGO 抵達")
+        col1.write("12:00 TPE 起飛 → 15:35 NGO 抵達")
 
     # --- Step 1: 機場到名古屋 (電車) ---
     st.subheader("1️⃣ 機場 ➔ 名鐵名古屋站")
