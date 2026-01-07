@@ -70,15 +70,14 @@ def show():
     
     # --- Step 4: 住宿資訊 ---
     st.divider()
-    st.subheader("🏨 今晚住宿")
-    st.link_button("🗺️ 帶我去飯店", get_gmap_link("1 Chome-12-17 Hirooka, Kanazawa, Ishikawa 920-0031日本", "walking"))
-    # [修正] 更新飯店名稱與地址
+    # [修正] 標題改為飯店名稱
+    st.subheader("🏨 金澤站西口大和Roynet飯店")
+    
+    # [修正] 導航按鈕移至這裡
+    st.link_button("🗺️ 導航", get_gmap_link("1 Chome-12-17 Hirooka, Kanazawa, Ishikawa 920-0031日本", "walking"))
+    
     with st.container(border=True):
         st.text("Daiwa Roynet Hotel KANAZAWAEKI-NISHIGUCHI")
         st.text("ダイワロイネットホテル 金沢駅西口")
-        #st.markdown("---")
         st.text("📍 日：〒920-0031 石川県金沢市広岡1-12-17")
         st.text("📍 英：1-12-17, Hirooka, Kanazawa-shi, Ishikawa 920-0031")
-        
-        # 導航關鍵字設為日文地址或具體名稱較準確
-        #st.link_button("🗺️ 帶我去飯店", get_gmap_link("1 Chome-12-17 Hirooka, Kanazawa, Ishikawa 920-0031日本", "walking"))
