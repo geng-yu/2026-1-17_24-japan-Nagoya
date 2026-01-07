@@ -60,7 +60,7 @@ def show():
     3. 搭電梯至 **3F 名鐵巴士中心**
     """)
     
-    st.link_button("📍 導航：名鐵巴士中心 (6號乘車處)", get_gmap_link("名鐵巴士中心 1 Chome-2-4 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002日本", "walking"), type="primary")
+    st.link_button("📍 導航：名鐵巴士中心 (6號乘車處)", get_gmap_link("名鐵巴士中心 1 Chome-2-4 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002日本", "transit"), type="primary")
 
     st.info("🍱 **任務：** 在此處購買點心、晚餐 (稍後車上吃)。")
 
