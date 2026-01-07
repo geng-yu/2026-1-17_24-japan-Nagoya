@@ -73,7 +73,7 @@ st.markdown("""
         justify-content: center;
         text-align: center; 
         
-        min-width: 68px; /* 固定寬度 */
+        min-width: 70px; /* 固定寬度 */
         height: 55px;    /* 固定高度 */
     }
 
