@@ -74,9 +74,9 @@ def show():
     
     # [修正] 更新飯店名稱與地址
     with st.container(border=True):
-        st.text(" **Daiwa Roynet Hotel KANAZAWAEKI-NISHIGUCHI** ")
+        st.text("Daiwa Roynet Hotel KANAZAWAEKI-NISHIGUCHI")
         st.text("ダイワロイネットホテル 金沢駅西口")
-        st.markdown("---")
+        #st.markdown("---")
         st.text("📍 日：〒920-0031 石川県金沢市広岡1-12-17")
         st.text("📍 英：1-12-17, Hirooka, Kanazawa-shi, Ishikawa 920-0031")
         
