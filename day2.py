@@ -137,7 +137,7 @@ def show():
     st.subheader("6️⃣ 金澤 FORUS (晚餐/寶可夢)")
 
     st.markdown("**Step 1：前往搭車點 (走路)**")
-    st.link_button("🚶 導航：廣坂‧21世紀美術館 (公車站)", get_gmap_link("Hirosaka / 21st Century Museum Bus Stop", "walking"))
+    st.link_button("🚶 導航：廣坂‧21世紀美術館 (公車站)", get_gmap_link("36.56168309662548, 136.6583946033682", "walking"))
 
     st.markdown("""
     **Step 2：確認公車班次**
