@@ -70,7 +70,7 @@ def show():
     
     # --- Step 4: 住宿資訊 ---
     st.divider()
-    st.subheader("🏨 今晚住宿")
+    st.subheader("🏨 今晚住宿  st.link_button("🗺️ 帶我去飯店", get_gmap_link("1 Chome-12-17 Hirooka, Kanazawa, Ishikawa 920-0031日本", "walking"))")
     
     # [修正] 更新飯店名稱與地址
     with st.container(border=True):
@@ -81,4 +81,4 @@ def show():
         st.text("📍 英：1-12-17, Hirooka, Kanazawa-shi, Ishikawa 920-0031")
         
         # 導航關鍵字設為日文地址或具體名稱較準確
-        st.link_button("🗺️ 帶我去飯店", get_gmap_link("1 Chome-12-17 Hirooka, Kanazawa, Ishikawa 920-0031日本", "walking"))
+        #st.link_button("🗺️ 帶我去飯店", get_gmap_link("1 Chome-12-17 Hirooka, Kanazawa, Ishikawa 920-0031日本", "walking"))
