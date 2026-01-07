@@ -16,7 +16,7 @@ def show():
     st.subheader("1️⃣ 機場 ➔ 名鐵名古屋站")
     
     # [修正] 紅色提醒：加入 Highwaybus 連結
-    st.warning("⚠️ 重要提醒：確認車次後，巴士 ** 發車前 30 分鐘 ** 付款取票！[巴士付款頁面](https://www.highwaybus.com/gp/reference/refCertification?refCertSelected=selected)")
+    st.warning("⚠️ 重要提醒：確認車次後，巴士 **發車前 30 分鐘** 付款取票！[巴士付款頁面](https://www.highwaybus.com/gp/reference/refCertification?refCertSelected=selected)")
     st.info("💡 搭乘 **名鐵電車 (Meitetsu Line)** 前往市區")
     
     # [修正] 時刻表：加入名鐵官網連結與現金提醒
