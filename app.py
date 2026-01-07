@@ -73,14 +73,14 @@ st.markdown("""
         justify-content: center;
         text-align: center; 
         
-        min-width: 70px; /* 固定寬度 */
+        min-width: 68px; /* 固定寬度 */
         height: 55px;    /* 固定高度 */
     }
 
     /* 4. 文字內容設定 (修復置中與換行) */
     div[role="radiogroup"] label p {
         font-size: 14px;
-        line-height: 1.3;
+        line-height: 1.4;
         font-weight: bold;
         margin: 0px !important; /* 強制移除邊距 */
         padding: 0px !important;
