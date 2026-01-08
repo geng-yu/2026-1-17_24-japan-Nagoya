@@ -37,7 +37,7 @@ def show():
     # ==========================================
     st.subheader("2️⃣ 新穗高纜車")
     st.info("💡 **小提醒**：如果風大纜車可能會停駛，出發前建議先看一下官網運行狀況。")
-
+    st.markdown("[官網](https://shinhotaka-ropeway.jp/zh-TW/)")
     st.markdown("🅿️ **停車場導航 (依指示前往)**")
     
     st.markdown("**Option 1: 新穗高溫泉停車場**")
