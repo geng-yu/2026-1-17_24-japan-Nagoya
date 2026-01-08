@@ -123,8 +123,11 @@ def show():
 
     st.markdown("**Step 2：手機導航**")
     st.link_button("🚗 導航：FAV HOTEL 飛驒高山", get_gmap_link("FAV HOTEL HIDA TAKAYAMA", "driving"))
-
-    st.success("🌙 如果有買飛驒牛，飯店內通常有簡易廚房或可借用器具！")
+    with st.expander("附近餐廳"):
+        st.markdown("""
+        * **🥩 壽喜燒**: st.link_button("導航", get_gmap_link("寿々や (Suzuya)", "walking"))
+        """)
+    
 
 if __name__ == "__main__":
     show()
