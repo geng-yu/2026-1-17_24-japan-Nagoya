@@ -40,7 +40,6 @@ def show():
 
     st.markdown("**Step 1：車機導航**")
     st.code("電話：05769-6-3111\nMapCode：549 018 350", language="text")
-    st.caption("目的地：村營 Seseragi 公園停車場")
 
     st.markdown("**Step 2：手機導航**")
     st.link_button("🅿️ 導航：村營 Seseragi 停車場", get_gmap_link("Shirakawa-go Seseragi Park Parking", "driving"))
