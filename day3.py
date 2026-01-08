@@ -125,8 +125,7 @@ def show():
     st.link_button("🚗 導航：FAV HOTEL 飛驒高山", get_gmap_link("FAV HOTEL HIDA TAKAYAMA", "driving"))
     with st.expander("附近餐廳"):
         st.markdown("""
-        * **🥩 壽喜燒**
-        * st.link_button("導航", get_gmap_link("寿々や (Suzuya)", "walking"))
+        * **🥩 壽喜燒**: 寿々や (Suzuya)
         """)
     
 
