@@ -35,17 +35,16 @@ def show():
     # ==========================================
     # 2. 新穗高纜車
     # ==========================================
-    st.subheader("2️⃣ 新穗高纜車 (雙層纜車)")
+    st.subheader("2️⃣ 新穗高纜車")
     st.markdown("從高山開車約 1 小時，欣賞北阿爾卑斯山脈雪景。")
 
     st.markdown("🅿️ **停車場導航 (依指示前往)**")
     
     st.markdown("**Option 1: 新穗高溫泉停車場 (山腳站)**")
-    st.link_button("🚗 導航：Shinhodaka Hot Spring P", get_gmap_link("Shinhodaka Hot Spring Parking Lot", "driving"))
+    st.link_button("🚗 導航："新穗高溫泉停車場", get_gmap_link("Shinhodaka Hot Spring Parking Lot", "driving"))
 
     st.markdown("**Option 2: 鍋平高原 (第2纜車站附近)**")
-    st.caption("若是第一停車場滿了，或想直接去第二纜車，請用此座標。")
-    st.link_button("📍 導航：指定座標點 (36.286...)", get_gmap_link("36.286129739124846, 137.5756970360327", "driving"))
+    st.link_button("📍 導航：新穗高第1駐車場", get_gmap_link("36.286129739124846, 137.5756970360327", "driving"))
     
     st.markdown("**Option 3: 新穗高第2停車場**")
     st.link_button("🚗 導航：新穗高第2駐車場", get_gmap_link("Shinhotaka No.2 Parking Lot", "driving"))
@@ -78,9 +77,6 @@ def show():
 
     st.markdown("**Step 1：車機導航設定**")
     st.caption("地址：3 Chome-609-12 Nishinoisshikimachi")
-    # 因為沒有電話，提供地址或座標
-    st.code("36.1353954027542, 137.2467511630958", language="text")
-
     st.markdown("**Step 2：手機導航**")
     st.link_button("🍜 導航：吉田製麵所 (指定座標)", get_gmap_link("36.1353954027542, 137.2467511630958", "driving"))
 
