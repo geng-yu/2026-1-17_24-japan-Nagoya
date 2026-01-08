@@ -11,11 +11,12 @@ def show():
     st.code("電話：0575-73-2888", language="text")
     st.markdown("**Step 2：手機導航**")
     st.link_button("⛄ 導航：牧歌之里", get_gmap_link("Bokka no Sato", "driving"))
-
+    st.warning("⚠️ 取裝備")
     with st.expander("🍽️ 餐點"):
         st.markdown("""
-        * **午餐**：園區內餐廳提供飛驒牛料理、蛋包飯。
-        * **必吃**：牧場自家製霜淇淋、牛奶布丁 (非常濃郁)。
+        * **木花之鄉1F**：霜淇淋
+        * **木花之鄉2F**：蛋包飯、泰式雞腿咖哩、培根義大利麵(辣)、熱牛奶巧克力棒
+        * **溫泉木花1F**：霜淇淋、牛肉可樂餅、炸雞、豬肉丼飯(辣)、味增雞肉定食、烤牛肉
         """)
 
     st.divider()
