@@ -17,7 +17,7 @@ def show():
     st.subheader("1️⃣ 金澤租車 (Toyota Rent a Car)")
     
     st.markdown("**Step 1：前往租車點 (走路)**")
-    st.caption("位於金澤車站「西口」，請出站後往西口走。")
+    st.caption("位於金澤車站「西口」，請出站後往西口走")
     st.link_button("🚶 導航：Toyota租車 金澤站西口店", get_gmap_link("Toyota Rent a Car Kanazawa Station West Exit", "walking"))
 
     st.markdown("""
@@ -29,7 +29,7 @@ def show():
     * **HsinWen Huang**: `99998325000`
     """)
 
-    st.warning("⚠️ **注意**：取車時確認車身舊傷。")
+    st.warning("⚠️ **注意**：取車時確認車身舊傷")
 
     st.divider()
 
@@ -45,8 +45,8 @@ def show():
     st.link_button("🅿️ 導航：村營 Seseragi 停車場", get_gmap_link("Shirakawa-go Seseragi Park Parking", "driving"))
 
     st.markdown("""
-    **Step 3：怎麼玩？**
-    * **走法**：停好車後，走過吊橋「相逢橋 (Deai-bashi)」即抵達村落。""")
+    **Step 3：走法**
+    * 停好車後，走過吊橋「相逢橋 (Deai-bashi)」抵達村落""")
     with st.expander("📸 必拍"):
         st.markdown("""
         * **三小屋** (落人咖啡館旁，三棟連在一起的經典畫面)
