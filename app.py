@@ -143,7 +143,7 @@ for i, key in enumerate(options):
         break
 
 # --- 介面呈現 ---
-st.title("🇯🇵 2026 名古屋")
+st.title("🇯🇵 2026 名古屋 1/17-24")
 
 # 橫向按鈕選單
 selected_key = st.radio(
