@@ -65,21 +65,18 @@ def show():
     # 3. 飛驒高山老街 (午餐)
     # ==========================================
     st.subheader("3️⃣ 飛驒高山老街")
-    st.markdown("遊客多，停車場照優先順序前往")
 
-    st.markdown("#### 停車 A (優先)")
-    st.markdown("**市營神明停車場** (停1F)")
-    st.markdown("**車機導航**")
+    st.markdown("**市營神明停車場** (停1F、近)")
+    st.markdown("**Step 1：車機導航**")
     st.code("電話：0577-32-5388", language="text")
-    st.markdown("**手機導航**")
+    st.markdown("**Step 2：手機導航**")
     st.link_button("🅿️ 導航：市營神明停車場", get_gmap_link("Takayama City Municipal Shinmei Parking Lot", "driving"))
     st.warning("⚠️ 收現金 (限1000元鈔)")
     
-    st.markdown("#### 停車 B (備案)")
     st.markdown("**市營空町停車場** (走到老街約10分鐘)")
-    st.markdown("**車機導航**")
+    st.markdown("**Step 1：車機導航**")
     st.code("電話：0577-32-5062", language="text")
-    st.markdown("**手機導航**")
+    st.markdown("**Step 2：手機導航**")
     st.link_button("🅿️ 導航：市營空町停車場", get_gmap_link("Takayama City Municipal Soramachi Parking Lot", "driving"))
     st.warning("⚠️ 收現金 (限1000元鈔)")
     with st.expander("🍣 老街午餐 & 必吃"):
