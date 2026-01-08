@@ -32,8 +32,8 @@ def show():
     st.code("MapCode：70 157 836*35\n電話：0568-61-1711", language="text")
 
     st.markdown("**Step 2：手機導航**")
-    st.link_button("🏯 導航：犬山城第1停車場", get_gmap_link("Inuyama Castle Parking Lot 1", "driving"))
-
+    st.link_button("🏯 導航：犬山城第1停車場", get_gmap_link("35.38565193464993, 136.93729569046315", "driving"))
+    st.link_button("🏯 導航：犬山城第2停車場", get_gmap_link("35.38657174316102, 136.9422415405705", "driving"))
     st.divider()
 
     # ==========================================
