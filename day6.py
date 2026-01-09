@@ -33,12 +33,12 @@ def show():
     # ==========================================
     st.subheader("3️⃣ SKYLE")
     st.link_button("🛍️ 導航：SKYLE 名古屋", get_gmap_link("SKYLE Nagoya", "walking"))
-    st.markdown("""
-    **樓層重點：**
-    * **4F**: 3COINS
-    * **5F**: UNIQLO
-    * **6F**: GU
-    """)
+    with st.expander("🛒 SKYLE 樓層"):
+        st.markdown("""
+        * **4F**: 3COINS
+        * **5F**: UNIQLO
+        * **6F**: GU
+        """)
 
     st.divider()
 
