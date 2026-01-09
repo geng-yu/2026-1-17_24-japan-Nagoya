@@ -6,7 +6,7 @@ def show():
     with st.container(border=True):
         st.subheader("🛫 國泰航空 CX531")
         st.markdown("""
-        * 16:40 NGO 起飛 → 19:15 TPE 抵達
+        16:40 NGO 起飛 → 19:15 TPE 抵達
         """)
 
     # ==========================================
@@ -122,7 +122,7 @@ def show():
     with st.container(border=True):
         st.subheader("🛫 國泰航空 CX531")
         st.markdown("""
-        * 16:40 NGO 起飛 → 19:15 TPE 抵達
+        16:40 NGO 起飛 → 19:15 TPE 抵達
         """)
 
     st.divider()
