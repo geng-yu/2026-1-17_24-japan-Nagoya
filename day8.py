@@ -130,13 +130,12 @@ def show():
         * **酒類**：獺祭、久保田等日本酒
         * **LeTAO 起司蛋糕**：需購買保冷袋
         """)
-
+    st.divider()
     with st.container(border=True):
         st.subheader("🛫 國泰航空 CX531")
         st.markdown("""
         16:40 NGO 起飛 → 19:15 TPE 抵達
         """)
-    st.divider()
     
 if __name__ == "__main__":
     show()
