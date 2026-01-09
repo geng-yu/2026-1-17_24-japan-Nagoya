@@ -101,20 +101,20 @@ def show():
     st.subheader("4️⃣ 中部國際機場 (Centrair) 購物")
     
     st.markdown("**Step 1：報到前 (Landside - 4F Sky Town)**")
-    st.markdown("這裡最好買！請在掛行李前先買好塞進去。")
+    st.markdown("這裡最好買！掛行李前先買好塞進去")
     
     with st.expander("🦐 必買：蝦餅之里 (Ebisenbei no Sato)"):
         st.markdown("""
-        * **位置**：4F 提燈橫丁 (很顯眼，人最多的那間)
+        * **位置**：4F 提燈橫丁 (人最多的那間)
         * **推薦**：綜合包 (最划算)、梅子口味、芥末口味
-        * **注意**：**這裡買的可以退稅，建議直接買一箱裝箱託運**
+        * **注意**：**可以退稅，建議直接買一箱裝箱託運**
         """)
 
     with st.expander("🍘 其他 4F 推薦"):
         st.markdown("""
         * **赤福 (Akafuku)**：伊勢名產，紅豆麻糬 (保存期限短)
         * **兩口屋是清**：傳統和菓子，適合送長輩
-        * **天むす (炸蝦飯糰)**：4F 有名店「千壽」，可以買幾個上飛機吃或當午餐
+        * **天むす (炸蝦飯糰)**：4F 有名店「千壽」，飛機吃或當午餐
         """)
 
     st.markdown("---")
@@ -131,5 +131,12 @@ def show():
         * **LeTAO 起司蛋糕**：需購買保冷袋
         """)
 
+    with st.container(border=True):
+        st.subheader("🛫 國泰航空 CX531")
+        st.markdown("""
+        16:40 NGO 起飛 → 19:15 TPE 抵達
+        """)
+    st.divider()
+    
 if __name__ == "__main__":
     show()
