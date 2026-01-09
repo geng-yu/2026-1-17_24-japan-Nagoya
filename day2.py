@@ -163,6 +163,7 @@ def show():
         * **木桶飯6F**：Shiroku (四六時中)
         """)
     st.success("🛍️ **逛街重點 (FORUS)**：\n* **4F**：Uniqlo (免稅)\n* **5F**：寶可夢中心 (Pokemon Center Kanazawa) - 門口有「美納斯」雕像。")
-
+    st.divider()
+    show_food_table("金澤")
 if __name__ == "__main__":
     show()
