@@ -74,20 +74,19 @@ def show():
 
     st.markdown("**Step 1：購物 - 中日大樓**")
     st.link_button("⛰️ 導航：中日大樓", get_gmap_link("mont-bell Nagoya Sakae", "walking"))
-    with st.expander("🍦 中日樓層"):
+    with st.expander("🛒 中日樓層"):
         st.markdown("""
-        * **金箔霜淇淋** 、 **矢場味噌豬排**
-        * **伴手禮**：印有金鯱圖案的蝦餅
+        * **1F** :藍瓶咖啡、HOKA、RedWing
+        * **2F**：Montbell、退稅櫃檯
         """)
-    st.markdown("**Step 2：晚餐 - 世界的山將 (本店)**")
-    st.markdown("來到名古屋一定要朝聖的「夢幻手羽先」總本店！")
+    st.markdown("**Step 2：晚餐 - 世界的山將**")
     st.link_button("🍗 導航：世界的山將 本店", get_gmap_link("Sekai no Yamachan Honten", "walking"))
 
     with st.expander("🍻 點我看：必點菜單"):
         st.markdown("""
-        * **幻之手羽先 (Maboroshi no Tebasaki)**：招牌胡椒辣味雞翅，建議一人先點 5 支。
-        * **味噌串炸**：配啤酒絕佳。
-        * **台灣拉麵具**：這家店也有賣名古屋特色的台灣拉麵炒料。
+        * **幻之手羽先**：胡椒辣味雞翅，建議一人先點 5 支
+        * **味噌串炸**：配啤酒絕佳
+        * **台灣拉麵具**：名古屋特色的台灣拉麵炒料
         """)
 
     st.divider()
@@ -98,18 +97,16 @@ def show():
     st.subheader("5️⃣ 夜景 & HARBS 甜點")
 
     st.markdown("**Step 1：Oasis 21 (水的宇宙船)**")
-    st.caption("晚上打燈後非常漂亮，可以上到玻璃屋頂散步，拍電視塔(中部電力塔)倒影。")
+
     st.link_button("🌃 導航：Oasis 21", get_gmap_link("Oasis 21", "walking"))
 
     st.markdown("**Step 2：HARBS 外帶 (LACHIC店)**")
-    st.warning("⚠️ 記得注意百貨公司打烊時間 (通常 21:00)。")
+    st.warning("⚠️ 注意打烊時間 (通常 21:00)")
     st.link_button("🍰 導航：HARBS 名古屋 LACHIC", get_gmap_link("HARBS Nagoya LACHIC", "walking"))
 
-    with st.expander("🍓 點我看：必吃蛋糕"):
+    with st.expander("🍓 必吃蛋糕"):
         st.markdown("""
-        * **水果千層蛋糕 (Mille Crepes)**：HARBS 招牌，層層堆疊的新鮮水果與卡士達醬。
-        * **草莓蛋糕**：鮮奶油非常清爽不膩。
-        * **備註**：這家店是發源於名古屋，所以來這裡吃特別有意義。
+        * **水果千層蛋糕** 、 **草莓蛋糕**
         """)
 
 if __name__ == "__main__":
