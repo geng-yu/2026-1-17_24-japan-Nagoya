@@ -105,6 +105,7 @@ def show():
         st.markdown("""
         * **水果千層蛋糕** 、 **草莓蛋糕**
         """)
-
+    st.divider()
+    show_food_table("榮商圈")
 if __name__ == "__main__":
     show()
