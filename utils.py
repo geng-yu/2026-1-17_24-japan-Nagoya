@@ -1,12 +1,11 @@
 # 檔案名稱：utils.py
 import streamlit as st
+import pandas as pd
 
 def get_gmap_link(query, mode="transit"):
     # mode: driving (開車), walking (走路), transit (大眾運輸)
     base_url = "https://www.google.com/maps/dir/?api=1"
     return f"{base_url}&destination={query}&travelmode={mode}"
-import streamlit as st
-import pandas as pd
 
 def show_food_table(region):
     """
@@ -42,7 +41,7 @@ def show_food_table(region):
     }
 
     # ==========================================
-    # 2. 處理資料與顯示 (不用改這裡)
+    # 2. 處理資料與顯示 logic
     # ==========================================
     
     # 檢查地區是否存在
@@ -53,12 +52,12 @@ def show_food_table(region):
     # 建立 DataFrame
     df = pd.DataFrame(data_source[region])
 
-    # 自動產生 Google Maps 導航連結
-    def get_gmap_link(name):
+    # 內部使用的導航產生器 (使用標準 Google Maps 搜尋)
+    def make_link(name):
         return f"https://www.google.com/maps/search/?api=1&query={name}"
     
     # 新增導航欄位
-    df["導航"] = df["店名"].apply(get_gmap_link)
+    df["導航"] = df["店名"].apply(make_link)
     
     # 重新排列欄位順序
     df = df[["店名", "導航", "時間", "備註"]]
@@ -71,7 +70,7 @@ def show_food_table(region):
                 "店名": st.column_config.TextColumn("店名", width="medium"),
                 "導航": st.column_config.LinkColumn(
                     "導航",
-                    display_text="📍 導航",  # 按鈕上顯示的文字
+                    display_text="📍 導航", 
                     help="點擊前往 Google Maps",
                     validate="^https://.*",
                     width="small"
@@ -79,12 +78,29 @@ def show_food_table(region):
                 "時間": st.column_config.TextColumn("時間", width="small"),
                 "備註": st.column_config.TextColumn("備註", width="large"),
             },
-            hide_index=True,   # 隱藏索引 0, 1, 2...
-            disabled=True,     # 禁止編輯，變成唯讀
+            hide_index=True,
+            disabled=True,
             use_container_width=True
         )
+第二步：修正 day1.py (檢查匯入位置)
+非常重要：from utils import show_food_table 必須放在檔案的最上面（第 1 或第 2 行），不能放在 def show(): 裡面，也不能放在 if __name__... 裡面。
 
-# ==========================================
-# 使用範例 (貼在對應的天數下方)
-# ==========================================
-# show_food_table("金澤")
+請確認您的 day1.py 長得像這樣：
+
+Python
+
+import streamlit as st
+# 👇 這一行一定要加在最上面，跟其他 import 放在一起
+from utils import get_gmap_link, show_food_table 
+
+def show():
+    st.header("...")
+    # ... (原本的中間內容) ...
+    
+    st.divider()
+    
+    # 👇 這一行加在 show() 函式的最後面，縮排要對齊
+    show_food_table("金澤")
+
+if __name__ == "__main__":
+    show()
