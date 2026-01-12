@@ -15,7 +15,7 @@ def show():
     # ==========================================
     st.subheader("1️⃣ 唐吉訶德 榮本店")
     st.link_button("🐧 導航：唐吉訶德 榮本店", get_gmap_link("Don Quijote Sakae", "walking"))
-    st.markdown("[折價券(滿10,000日元)](https://japanportal.donki-global.com/coupon/cp002.html)")
+    st.markdown("[折價券(滿10,000日元)](https://japanportal.donki-global.com/coupon/cp001_zhtw.html)")
     st.divider()
 
     # ==========================================
