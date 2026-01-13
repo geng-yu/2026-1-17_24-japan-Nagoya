@@ -25,7 +25,7 @@ def show():
     st.subheader("2️⃣ 馬喰一代 名古屋榮")
     
     st.warning("⏰ **預約時間：11:30**")
-    st.link_button("🥩 導航：馬喰一代", get_gmap_link("Bakuroichidai Nagoya Sakae", "walking"))
+    st.link_button("🥩 導航：馬喰一代 5F", get_gmap_link("Bakuroichidai Nagoya Sakae", "walking"))
 
     st.divider()
 
