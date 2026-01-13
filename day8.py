@@ -3,7 +3,7 @@ import pandas as pd
 from utils import get_gmap_link
 
 def show():
-
+    st.caption("1/24")
     # ==========================================
     # 0. 航班資訊 (置頂提醒)
     # ==========================================
