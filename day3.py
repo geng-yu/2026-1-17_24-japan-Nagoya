@@ -87,6 +87,7 @@ def show():
     st.markdown("**Step 2：手機導航**")
     st.link_button("🅿️ 導航：市營空町停車場", get_gmap_link("Takayama City Municipal Soramachi Parking Lot", "driving"))
     st.warning("⚠️ 收現金 (限1000元鈔)")
+    st.link_button("🚶  導航：高山老街", get_gmap_link("36.14009405289713, 137.2596009170065", "walking"))
     with st.expander("🍣 老街午餐 & 必吃"):
         st.markdown("""
         * **握壽司**：三種盛合(こって牛)
