@@ -103,7 +103,7 @@ def show():
     st.markdown("**Step 1：車機導航**")
     st.caption("地址：3 Chome-609-12 Nishinoisshikimachi")
     st.markdown("**Step 2：手機導航**")
-    st.link_button("🍜 導航：吉田製麵所 (指定座標)", get_gmap_link("36.1353954027542, 137.2467511630958", "driving"))
+    st.link_button("🍜 導航：吉田製麵所", get_gmap_link("36.1353954027542, 137.2467511630958", "driving"))
 
     st.divider()
 
