@@ -154,6 +154,11 @@ selected_key = st.radio(
     label_visibility="collapsed"
 )
 
+st.markdown("""
+🎫 **優惠券快速傳送門：** [💊 松本清 (Matsumoto Kiyoshi)](https://www.matsukiyo.co.jp/store/online) ｜ 
+[💊 大國藥局 (Daikoku)](https://daikokudrug.com/) ｜ 
+[🛍️ 驚安殿堂唐吉訶德](https://www.donki.com/)
+""")
 st.divider()
 
 # --- 顯示內容 ---
